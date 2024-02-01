@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="us-ascii">
+    <title>Websocket Chat</title>
+    <link href="output.css" rel="stylesheet">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="client.js"></script>
+
+</head>
+<body class="bg-neutral-900 shadow-amber-200">
+
+
+<div class="shadow-sky-700 shadow-2xl bg-neutral-700 text-neutral-100 text-3xl scale-125 xl:scale-100 m-auto flex flex-col h-screen gap-2 justify-center w-screen sm:w-2/3 p-10 font-mono">
+    <div>
+        <h1 id="title" class="text-6xl">Global Chat</h1>
+    </div>
+
+    <p class="opacity-20">Chat:</p>
+
+    <textarea id="from-server-area"
+              class="border border-neutral-900 shadow-md h-1/2 p-2 bg-neutral-400 text-neutral-800 border-none"
+              readonly="readonly">
+        </textarea>
+    <form id="form" class="flex flex-col gap-2 items-start" action="">
+        <div>
+            <label for="username-field">from:</label>
+            <input id="username-field" class="p-2 bg-opacity-0 bg-neutral-200 text-neutral-500"
+                   placeholder="enter username" type="text"/>
+        </div>
+
+        <div class="flex flex-row gap-2">
+            <input id="message-field" autocomplete="off" class="border border-neutral-900 p-2 bg-neutral-200 text-neutral-500"
+                   placeholder="send message" type="text"/>
+
+            <input id="send-button" type="submit" value=">" class="p-2 border border-neutral-900 bg-neutral-400"/>
+        </div>
+
+    </form>
+
+
+</div>
+
+</body>
+</html>
