@@ -7,9 +7,9 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server);
 const __dirname = dirname(fileURLToPath(path.dirname(import.meta.url)));
-console.log(__dirname);
 const port = process.env.PORT || 3000;
 let globalChat = '';
+console.log('connected to port: ' + port + ' at http://localhost:3000');
 app.use(express.static(__dirname + '\\public'));
 app.get('/', (req, res) => {
     res.sendFile('index.html');
