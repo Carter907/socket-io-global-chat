@@ -1,6 +1,7 @@
 ## Global Chat Application
 
-To run my example. clone this repository and run the follwing commands in the root directory.
+To run my example,
+clone this repository and run the follwing npm commands.
 
 ```
 npm install
